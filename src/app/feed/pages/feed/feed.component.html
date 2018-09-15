@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <h1 class="title">
+      {{ 'PAGES.FEED.TITLE' | translate }}
+    </h1>
+</div>
+  <div class="row">
+  <app-feed-card *ngFor="let feed of feeds" [feed]="feed" ></app-feed-card>
+  </div>
+</div>

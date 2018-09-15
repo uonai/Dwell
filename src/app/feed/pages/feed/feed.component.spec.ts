@@ -1,15 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import { FeedComponent } from './feed.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+  let component: FeedComponent;
+  let fixture: ComponentFixture<FeedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ],
+      declarations: [ FeedComponent ],
       imports: [
         TranslateModule.forRoot()
       ]
@@ -18,7 +18,7 @@ describe('HomeComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(FeedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -29,6 +29,6 @@ describe('HomeComponent', () => {
 
   it('should render title in a h1 tag', async(() => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('PAGES.HOME.TITLE');
+    expect(compiled.querySelector('h1').textContent).toContain('PAGES.Feed.TITLE');
   }));
 });

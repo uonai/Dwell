@@ -1,11 +1,11 @@
-import { HomeComponent } from './home/pages/home/home.component';
+import { FeedComponent } from './feed/pages/feed/feed.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: FeedComponent
     }
 ];
 

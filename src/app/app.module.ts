@@ -16,9 +16,15 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ElectronService } from './providers/electron.service';
 
 import { WebviewDirective } from './directives/webview.directive';
-
+import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/pages/home/home.component';
+import { FeedComponent } from './feed/pages/feed/feed.component';
+import { FeedCardComponent } from './feed/components/feed-card/feed-card.component';
+import { StripHtmlTagsPipe } from './ui/pipe/strip-html-tags.pipe';
+import { FeedService } from './feed/pages/shared/feed-service.service';
+// Material design.
+import { MatCard, MatCardModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,23 +34,28 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    WebviewDirective
+    FeedComponent,
+    WebviewDirective,
+    FeedCardComponent,
+    StripHtmlTagsPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    MatCardModule,
+    HttpModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: (HttpLoaderFactory),
         deps: [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule
   ],
-  providers: [ElectronService],
+  providers: [FeedService, ElectronService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
