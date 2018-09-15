@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: center;
 
-  background: url(../../../../assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
-  background-position:fixed;
+  // background: url(../../../../assets/background.jpg) no-repeat center fixed;
+  // -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  // background-size: cover; /* version standardisée */
+  // background-position:fixed;
+  background-color:#29272c;
 
   .title {
     color: white;
@@ -14,8 +15,4 @@
     padding:50px 20px;
   }
 
-}
-
-h1 {
-  font-family: Input, sans-serif;
 }

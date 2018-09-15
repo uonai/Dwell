@@ -1,13 +1,14 @@
 .card-feed-entry {
     max-width: 400px;
-    background-color: rgba(255,255,255,0.5);
-  }
-
-  @font-face {
-    font-family: Input;
-    src: url(/assets/fonts/input_mono_medium.ttf) format('ttf')
+    background: transparent;
+    color:#f0EEF0;
   }
 
   .mat-card {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    box-shadow: none !important;
+}
+
+  .mat-card-subtitle {
+      color: #f0EEF0;
   }

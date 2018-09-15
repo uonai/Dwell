@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FeedService } from '../shared/feed-service.service';
 import { FeedCardComponent } from '../../components/feed-card/feed-card.component';
+import { NavigationmainComponent} from '../../../ui/navigationmain/navigationmain.component';
 
 // Add the RxJS Observable operators we need in this app.
 import '../../../rxjs-operators';
