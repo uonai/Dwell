@@ -14,6 +14,7 @@ import '../../../rxjs-operators';
 export class FeedComponent implements OnInit {
 
   private feedUrl: string = 'http://www.ribbonfarm.com/feed/';
+  private feedUrl2: string = 'https://feedforall.com/sample-feed.xml';
   private feeds: any;
 
   constructor(
@@ -21,11 +22,14 @@ export class FeedComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.refreshFeed();
+    this.refreshFeed(this.feedUrl);
+    this.refreshFeed(this.feedUrl2);
+
   }
 
-  private refreshFeed(){
-    this.feedService.getFeedContent(this.feedUrl)
+  private refreshFeed(a: any){
+    const feedUrl = a;
+    this.feedService.getFeedContent(feedUrl)
     .subscribe(
       feed => this.feeds = feed.items,
       error => console.log(error));
