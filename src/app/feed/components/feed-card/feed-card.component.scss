@@ -1,8 +1,16 @@
 .card-feed-entry {
     max-width: 400px;
     background: transparent;
-  }
-
-  .mat-card {
+}
+.mat-card {
     box-shadow: none !important;
 }
+.mat-card-title{
+  // font-family: 'Playfair Display', serif;
+  font-weight:bold;
+}
+.mat-card-subtitle{
+  font-weight:bold;
+  font-size:10px;
+}
+
