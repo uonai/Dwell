@@ -23,9 +23,10 @@ import { FeedCardComponent } from './feed/components/feed-card/feed-card.compone
 import { StripHtmlTagsPipe } from './ui/pipe/strip-html-tags.pipe';
 import { FeedService } from './feed/pages/shared/feed-service.service';
 // Material design.
-import { MatCard, MatCardModule, MatToolbarModule } from '@angular/material';
+import { MatCard, MatCardModule, MatToolbarModule, MatButtonModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationmainComponent } from './ui/navigationmain/navigationmain.component';
+import { AddItemComponent } from './feed/components/add-item/add-item.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     WebviewDirective,
     FeedCardComponent,
     StripHtmlTagsPipe,
-    NavigationmainComponent
+    NavigationmainComponent,
+    AddItemComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     MatCardModule,
     MatToolbarModule,
+    MatButtonModule,
     HttpModule,
     TranslateModule.forRoot({
       loader: {
