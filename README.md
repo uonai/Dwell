@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 [![Angular Logo](./logo-angular.jpg)](https://angular.io/) [![Electron Logo](./logo-electron.jpg)](https://electron.atom.io/)
+=======
+# Dwell
+* THIS IS IN DEVELOPMENT PHASE, INSTALL AT YOUR OWN RISK *
+
+
+
+>>>>>>> 29b8809100df05022e725ad5df0bee6f3be46085
 
 [![Travis Build Status][build-badge]][build]
 [![Dependencies Status][dependencyci-badge]][dependencyci]
