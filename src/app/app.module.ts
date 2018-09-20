@@ -22,13 +22,12 @@ import { FeedComponent } from './feed/pages/feed/feed.component';
 import { FeedCardComponent } from './feed/components/feed-card/feed-card.component';
 import { StripHtmlTagsPipe } from './ui/pipe/strip-html-tags.pipe';
 import { FeedService } from './feed/pages/shared/feed-service.service';
-import { DwellMaterialModule } from './core/material.module';
-// Material design.
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationmainComponent } from './ui/navigationmain/navigationmain.component';
 import { AddItemComponent } from './feed/components/add-item/add-item.component';
 import { SidenavComponent } from './ui/sidenav/sidenav.component';
+import { ClarityModule } from '@clr/angular';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -51,8 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    DwellMaterialModule,
-
+    ClarityModule,
     HttpModule,
     TranslateModule.forRoot({
       loader: {
@@ -61,7 +59,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClarityModule
   ],
   providers: [FeedService, ElectronService],
   bootstrap: [AppComponent]

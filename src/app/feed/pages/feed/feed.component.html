@@ -1,9 +1,14 @@
+<div class="main-container">
 
-<app-sidenav></app-sidenav>
+  <!--<nav class="subnav">
 
-<app-add-item></app-add-item>
-  <div class="container">
-  <div class="row">
-  <app-feed-card *ngFor="let feed of feeds" [feed]="feed" ></app-feed-card>
+  </nav>-->
+  <div class="content-container">
+      <div class="content-area">
+        <app-feed-card *ngFor="let feed of feeds" [feed]="feed" ></app-feed-card>
+      </div>
+      <nav class="sidenav">
+      <app-sidenav></app-sidenav>
+      </nav>
   </div>
 </div>
