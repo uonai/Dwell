@@ -7,11 +7,14 @@
   box-shadow:none;
   border-bottom:1px solid #242424;
   border-top-width:0px;
+  font-size:1rem;
+  line-height:1.6rem;
+  padding: 0 1rem 1rem;
 }
 
 .card-header{
   font-weight:bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0 .75rem;
 }
 
@@ -21,6 +24,18 @@
 
 .card-media-block .card-media-description{
   margin:0;
+}
+
+.card-footer{
+  font-size:1.6rem;
+  vertical-align:center;
+}
+
+.card-footer span{
+  position:absolute;
+  color:#242424;
+  top:45%;
+  right:45%;
 }
 
 /**text**/
