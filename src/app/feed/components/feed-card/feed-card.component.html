@@ -1,14 +1,21 @@
 <div class="row">
     <div class="card">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="card-block">
+                  <div class="card-media-block">
+                      <div class="card-media-description">
+              <span class="card-media-title small-text grey">{{feed.author}}</span>
+              </div>
+            </div>
+            </div>
           <div class="card-header">
             {{feed.title}}
           </div>
           <div class="card-block">
               <div class="card-media-block">
                   <div class="card-media-description">
-                      <span class="card-media-title">
-                        {{feed.author}} - {{feed.pubDate | date:'dd-MM-yyyy'}}
+                      <span class="card-media-title small-text grey">
+                        - {{feed.pubDate | date:'dd-MM-yyyy'}}
                       </span>
                       <span class="card-media-text">
 
